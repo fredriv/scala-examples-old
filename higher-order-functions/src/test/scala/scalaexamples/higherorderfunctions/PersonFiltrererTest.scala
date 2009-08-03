@@ -1,18 +1,11 @@
 package scalaexamples.higherorderfunctions
 
-import junit.framework.{Test, TestCase, TestSuite}
 import junit.framework.Assert._
-import junit.textui.TestRunner
+import org.junit.runner.RunWith
+import org.junit.runners.Suite
 
-object PersonFiltrererTest {
-  val suite: Test = new TestSuite(classOf[PersonFiltrererTest])
-  
-  def main(args: Array[String]) {
-    TestRunner run suite
-  }
-}
-
-class PersonFiltrererTest extends TestCase("PersonFiltrerer") {
+@RunWith(classOf[Suite])
+class PersonFiltrererTest {
   
   val personFiltrerer = new PersonFiltrerer
   
